@@ -10,8 +10,8 @@ namespace LZW
         static void Main(string[] args)
         {
             LZW lzw = new LZW();
-            lzw.CompressFile(@"D:\Третий курс\ТОИ\Лабораторная работа №5\LZW\LZW\bin\Debug\net6.0\data.txt", @"D:\Третий курс\ТОИ\Лабораторная работа №5\LZW\LZW\bin\Debug\net6.0\arch_data.bin");
-            lzw.DecompressFile(@"D:\Третий курс\ТОИ\Лабораторная работа №5\LZW\LZW\bin\Debug\net6.0\arch_data.bin", @"D:\Третий курс\ТОИ\Лабораторная работа №5\LZW\LZW\bin\Debug\net6.0\dearch_data.txt");
+            lzw.CompressFile("data.txt", "arch_data.bin");
+            lzw.DecompressFile("arch_data.bin", "dearch_data.txt");
         }
     }
 }
